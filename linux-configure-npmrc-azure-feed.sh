@@ -16,7 +16,6 @@ function configureUserNPMRC() {
         echo "Obs: utilize a opção CUSTOM nas permissões do PAT TOKEN e utilize somente a permissão: READ do PACKAGING "
         echo ""
         read -p "Digite o PAT token gerado para seu usuário: "  PAT
-        echo "$PAT"
 
         USER_NPM_RC="$HOME/.npmrc"
         PAT_B64=$(echo -n "$PAT" | base64 -w 0)
