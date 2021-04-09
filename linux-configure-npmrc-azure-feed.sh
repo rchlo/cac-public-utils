@@ -12,7 +12,7 @@ function configureProjectNPMRC() {
 }
 
 function configureUserNPMRC() {
-        echo "
+        echo ""
         echo "Configurando o .npmrc do usuário $HOME/.npmrc com credenciais"
         echo ""
         echo "Será necessário informar um token de acesso no az artifacts"
