@@ -1,7 +1,7 @@
 #! /usr/bin/pwsh
 
 
-Write-Output "Selecione qual sua organização:"
+Write-Output "Selecione qual sua organizacao:"
 Write-Output "1 - DEVOPS-RCHLO"
 Write-Output "2 - DEVOPS-MIDWAY"
 $a = Read-Host -Prompt "resposta: "
