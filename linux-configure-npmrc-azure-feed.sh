@@ -13,25 +13,6 @@ function configureProjectNPMRC() {
 
 function configureUserNPMRC() {
           azure-devops-npm-auth --client_id='212f1e16-b6cc-432f-b4d6-14a5963428b9' --tenant_id='b8329613-0680-4673-a03f-9a18a0b0e93b'
-#         echo ""
-#         echo "Configurando o .npmrc do usuário $HOME/.npmrc com credenciais"
-#         echo ""
-#         echo "Será necessário informar um token de acesso no az artifacts"
-#         echo "Veja como gerar em: https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page"
-#         echo "Obs: utilize a opção CUSTOM nas permissões do PAT TOKEN e utilize somente a permissão: READ do PACKAGING "
-#         echo ""
-#         read -p "Digite o PAT token gerado para seu usuário: "  PAT
-
-#         USER_NPM_RC="$HOME/.npmrc"
-#         PAT_B64=$(echo -n "$PAT" | base64 -w 0)
-#         echo "; begin auth token" > $USER_NPM_RC
-#         echo "//pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/:username=$SELECTED_ORG" >> $USER_NPM_RC
-#         echo "//pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/:_password=$PAT_B64"  >> $USER_NPM_RC
-#         echo "//pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/:email=npm requires email to be set but doesn't use the value" >> $USER_NPM_RC
-#         echo "//pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/:username=$SELECTED_ORG"  >> $USER_NPM_RC
-#         echo "//pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/:_password=$PAT_B64"  >> $USER_NPM_RC
-#         echo "//pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/:email=npm requires email to be set but doesn't use the value"  >> $USER_NPM_RC
-#         echo "; end auth token"  >> $USER_NPM_RC
     }
 
 select opt in "${options[@]}"
