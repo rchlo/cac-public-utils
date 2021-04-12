@@ -1,6 +1,6 @@
 #! /usr/bin/pwsh
 
-$a = Read-Host -Prompt "qual a sua organizacao? 1 - DEVOPS-RCHLO 2 - DEVOPS-MIDWAY "
+$a = Read-Host -Prompt "qual a sua organizacao? \n1 - DEVOPS-RCHLO \n2 - DEVOPS-MIDWAY "
 
 switch ($a) {
     1 { $org = "DEVOPS-RCHLO"; break }
