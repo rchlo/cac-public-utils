@@ -12,7 +12,7 @@ function configureProjectNPMRC() {
 }
 
 function configureUserNPMRC() {
-          sudo npm install -s -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+          sudo npm install -s -g azure-devops-npm-auth --registry https://registry.npmjs.com --always-auth false
           azure-devops-npm-auth --client_id='212f1e16-b6cc-432f-b4d6-14a5963428b9' --tenant_id='b8329613-0680-4673-a03f-9a18a0b0e93b'
 }
 
