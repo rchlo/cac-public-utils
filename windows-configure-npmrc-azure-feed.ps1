@@ -15,6 +15,8 @@ Write-Output "registry=https://pkgs.dev.azure.com/$org/_packaging/$org/npm/regis
 Write-Output "always-auth=true" >> .npmrc
 
 
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 npm install -g azure-devops-npm-auth
 azure-devops-npm-auth --client_id='212f1e16-b6cc-432f-b4d6-14a5963428b9' --tenant_id='b8329613-0680-4673-a03f-9a18a0b0e93b'
 
