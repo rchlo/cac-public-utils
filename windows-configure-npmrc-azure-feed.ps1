@@ -17,6 +17,6 @@ Write-Output "always-auth=true" >> .npmrc
 
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+npm install -s -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
 
 vsts-npm-auth -config .npmrc
