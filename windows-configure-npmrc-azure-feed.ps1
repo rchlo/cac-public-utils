@@ -13,6 +13,7 @@ switch ($a) {
 }
 
 Remove-Item .npmrc -Force -Recurse -ErrorAction Ignore
+Remove-Item $home/.npmrc -Force -Recurse -ErrorAction Ignore
 
 
 Write-Output "registry=https://pkgs.dev.azure.com/$org/_packaging/$org/npm/registry/" | Set-Content .npmrc
