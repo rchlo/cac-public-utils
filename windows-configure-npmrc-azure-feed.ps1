@@ -14,9 +14,6 @@ switch ($a) {
 
 Remove-Item .npmrc -Force -Recurse -ErrorAction Ignore
 
-Get-Process | Out-File C:\temp\process_list.txt
-
-
 
 Write-Output "registry=https://pkgs.dev.azure.com/$org/_packaging/$org/npm/registry/" | Set-Content .npmrc
 Write-Output "always-auth=true" | Add-Content .npmrc
