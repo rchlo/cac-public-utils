@@ -16,6 +16,8 @@ function configureProjectNPMRC() {
     echo "# VEJA INFORMAÇÕES SOBRE O NPMRC AQUI: https://docs.npmjs.com/cli/v7/configuring-npm/npmrc"
     echo "# Leia e entenda a utilidade do npmrc e os diferentes locais que ele pode estar"
     echo "# o .npmrc do projeto ficou configurado da seguinte forma:"
+    echo ""
+    echo ""
     cat .npmrc
     echo ""
     echo ""
