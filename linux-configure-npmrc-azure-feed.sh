@@ -7,8 +7,13 @@ SELECTED_ORG=""
 function configureProjectNPMRC() {
     echo ""
     echo "Configurando o .npmrc do projeto com o feed da org selecionada"
-    echo "registry=https://pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/" > .npmrc
+    echo "registry=https://registry.npmjs.org" > .npmrc
+    echo "@midway:registry=https://pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/" >> .npmrc
+    echo "@riachuelo:registry=https://pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/" >> .npmrc
+    echo "@pub-libs:registry=https://pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/" >> .npmrc
     echo "always-auth=true" >> .npmrc
+    echo "Configurações do .npmrc DO PROJETO"
+    cat .npmrc
 }
 
 function configureUserNPMRC() {
