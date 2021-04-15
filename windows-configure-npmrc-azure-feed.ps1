@@ -7,8 +7,8 @@ Write-Output "2 - DEVOPS-MIDWAY"
 $a = Read-Host -Prompt "resposta: "
 
 switch ($a) {
-    1 { $org = "DEVOPS-RCHLO"; break }
-    2 { $org = "DEVOPS-MIDWAY"; break }
+    1 { $SELECTED_ORG = "DEVOPS-RCHLO"; break }
+    2 { $SELECTED_ORG = "DEVOPS-MIDWAY"; break }
     Default { "Tente outra vez" ; exit }
 }
 
@@ -29,7 +29,7 @@ Write-Output "# Leia e entenda a utilidade do npmrc e os diferentes locais que e
 Write-Output "# o .npmrc do projeto ficou configurado da seguinte forma:"
 Write-Output ""
 Write-Output ""
-type result.txt .npmrc
+type .npmrc
 Write-Output ""
 Write-Output ""
 
