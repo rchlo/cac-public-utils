@@ -12,8 +12,13 @@ function configureProjectNPMRC() {
     echo "@riachuelo:registry=https://pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/" >> .npmrc
     echo "@pub-libs:registry=https://pkgs.dev.azure.com/$SELECTED_ORG/_packaging/$SELECTED_ORG/npm/registry/" >> .npmrc
     echo "always-auth=true" >> .npmrc
-    echo "Configurações do .npmrc DO PROJETO"
+    echo ""
+    echo "# VEJA INFORMAÇÕES SOBRE O NPMRC AQUI: https://docs.npmjs.com/cli/v7/configuring-npm/npmrc"
+    echo "# Leia e entenda a utilidade do npmrc e os diferentes locais que ele pode estar"
+    echo "# o .npmrc do projeto ficou configurado da seguinte forma:"
     cat .npmrc
+    echo ""
+    echo ""
 }
 
 function configureUserNPMRC() {
