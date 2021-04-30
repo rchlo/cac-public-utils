@@ -1,0 +1,4 @@
+{
+ "type":"deploy",
+ "branch": "$(Build.SourceBranch)"
+}
