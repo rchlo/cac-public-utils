@@ -1,0 +1,9 @@
+{
+  "toggles": {
+    "global": {
+      "chart": {
+        "api-microservice": "versão"
+      }
+    }
+  }
+}
