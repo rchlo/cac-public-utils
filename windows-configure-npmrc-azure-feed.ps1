@@ -38,4 +38,4 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 npm install -s -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
 
-vsts-npm-auth -config .npmrc
+vsts-npm-auth -config .npmrc -E '43000'
